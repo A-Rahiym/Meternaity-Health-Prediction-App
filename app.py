@@ -1,12 +1,12 @@
 import streamlit as st
 from home import show_home
-from predict import show_predict_page
+from detect import show_predict_page
 from about_data import show_about_data
 from model_overview import show_model_overview
 
 # Navigation sidebar
 st.sidebar.title("Menu")
-page = st.sidebar.selectbox("Choose a page", ["Home","About data","Model overview","Predict"])
+page = st.sidebar.selectbox("Choose a page", ["Home","About data","Model overview","detect"])
 
 
 # Render the selected page
