@@ -1,7 +1,7 @@
 import streamlit as st
 
 def show_home():
-    st.title("Welcome to Maternity Health Detection")
+    st.title("Welcome to Maternal  Health Risk Detector")
     st.write("""
         This application detects the health outcomes based on several factors like age, blood pressure, body temperature, etc.
         Use the navigation menu to explore the app.

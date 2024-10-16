@@ -21,7 +21,7 @@ classifier = data["model"]
 
 
 def show_predict_page():
-    st.title("Maternity Health Detection")
+    st.title("Maternity Health Risk Detection")
     st.write("Enter the following details to detect the health outcome:")
 
     age = st.text_input("Enter the age: ")
