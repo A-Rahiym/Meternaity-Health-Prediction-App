@@ -58,7 +58,7 @@ def show_predict_page():
     )
 
     
-    if st.button("Get Health Prediction"):
+    if st.button("Get Result"):
         # Check if all fields are filled and valid
         if age and systolic_bp and diastolic_bp and bs and body_temp and heart_rate:
             try:

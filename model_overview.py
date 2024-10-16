@@ -4,7 +4,7 @@ def show_model_overview():
     st.title("Model Overview")
     st.write("""
       **Model Overview**  
-In this app, we use a Maternity Health Predictor to evaluate various factors like age, blood pressure, and body temperature to predict health outcomes.
+In this app, we use a Maternity Health detector to evaluate various factors like age, blood pressure, and body temperature to predict health outcomes.
 
 **Why Random Forest?**  
 Random Forest emerged as the top-performing model in our evaluation. It is a powerful machine learning algorithm that builds multiple decision trees and aggregates their results for accurate health predictions. This ensemble method ensures reliable results and reduces overfitting, making it ideal for health-related predictions.

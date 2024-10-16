@@ -1,15 +1,15 @@
 import streamlit as st
 
 def show_home():
-    st.title("Welcome to Maternity Health Predictor")
+    st.title("Welcome to Maternity Health Detection")
     st.write("""
-        This application predicts the health outcomes based on several factors like age, blood pressure, body temperature, etc.
+        This application detects the health outcomes based on several factors like age, blood pressure, body temperature, etc.
         Use the navigation menu to explore the app.
     """)
     
     st.subheader("About")
     st.write("""
-        This app is designed to assist in predicting maternity health outcomes using machine learning.
+        This app is designed to assist in detecting maternity health outcomes using machine learning.
         It uses a Random Forest Classifier trained on relevant health data.
     """)
     st.subheader("Data")
