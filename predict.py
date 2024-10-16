@@ -21,8 +21,8 @@ classifier = data["model"]
 
 
 def show_predict_page():
-    st.title("Maternity Health Prediction")
-    st.write("Enter the following details to predict the health outcome:")
+    st.title("Maternity Health Detection")
+    st.write("Enter the following details to detect the health outcome:")
 
     age = st.text_input("Enter the age: ")
     
@@ -64,9 +64,9 @@ def show_predict_page():
             try:
                 X = np.array([[float(age), float(systolic_bp), float(diastolic_bp), float(bs), float(body_temp), float(heart_rate)]])
                 y = classifier.predict(X)
-                st.subheader("Health Prediction Result")
-                st.write(f"**Predicted Outcome:** {y[0]}")
-                st.write("This prediction is based on the data entered, including your age, blood pressure, blood sugar level, body temperature, and heart rate. Please remember that this is a predictive model and should be used for informational purposes only. For a comprehensive health assessment, consult with a healthcare professional.")
+                st.subheader("Result")
+                st.write(f"**Patients Result:** {y[0]}")
+                st.write("This result is based on the data entered, including your age, blood pressure, blood sugar level, body temperature, and heart rate. Please remember that this is a predictive model and should be used for informational purposes only. For a comprehensive health assessment, consult with a healthcare professional.")
             except ValueError:
                 st.error("Please enter valid numbers for all fields.")
         else:
