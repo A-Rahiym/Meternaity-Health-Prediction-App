@@ -12,7 +12,7 @@ page = st.sidebar.selectbox("Choose a page", ["Home","About data","Model overvie
 # Render the selected page
 if page == "Home":
     show_home()
-elif page == "Predict":
+elif page == "detect":
     show_predict_page()
     
 elif page == "About data":
